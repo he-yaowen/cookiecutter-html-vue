@@ -4,6 +4,7 @@
     "description": "{{ cookiecutter.project_description }}",
     "private": true,
     "scripts": {
+        "lint:eslint": "eslint . --ext .ts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -16,6 +17,9 @@
     "author": "{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>",
     "license": "{{ cookiecutter.license_id }}",
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.42.0",
+        "@typescript-eslint/parser": "^5.42.0",
+        "eslint": "^8.27.0",
         "typescript": "^4.8.4"
     }
 }
