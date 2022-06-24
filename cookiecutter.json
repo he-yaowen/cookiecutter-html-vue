@@ -16,5 +16,6 @@
     ],
     "license_fullname": "{{ cookiecutter.author_name }}",
     "license_year": "{% now 'utc', '%Y' %}",
-    "github_user": "{{ cookiecutter.author_name|slugify }}"
+    "github_user": "{{ cookiecutter.author_name|slugify }}",
+    "node_version": "16.18.1"
 }
