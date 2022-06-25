@@ -4,9 +4,11 @@
     "description": "{{ cookiecutter.project_description }}",
     "private": true,
     "scripts": {
+        "lint": "npm run lint:eslint && npm run lint:markdownlint && npm run lint:stylelint",
         "lint:eslint": "eslint . --ext .ts",
         "lint:markdownlint": "markdownlint *.md",
         "lint:stylelint": "stylelint ./src/**/*.{vue,css,styl}",
+        "prepare": "husky install",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -22,6 +24,7 @@
         "@typescript-eslint/eslint-plugin": "^5.42.0",
         "@typescript-eslint/parser": "^5.42.0",
         "eslint": "^8.27.0",
+        "husky": "^8.0.1",
         "markdownlint-cli": "^0.32.2",
         "stylelint": "^14.16.1",
         "stylelint-stylus": "^0.17.1",
