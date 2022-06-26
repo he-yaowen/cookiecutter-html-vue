@@ -18,5 +18,6 @@
     "license_year": "{% now 'utc', '%Y' %}",
     "github_user": "{{ cookiecutter.author_name|slugify }}",
     "node_version": "16.18.1",
-    "vue_version": ["3", "2"]
+    "vue_version": ["3", "2"],
+    "use_vuex": ["yes", "no"]
 }

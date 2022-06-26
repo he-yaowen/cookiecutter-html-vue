@@ -23,10 +23,12 @@
     "dependencies": {
     {% if cookiecutter.vue_version == '2' %}
         "vue": "^2.7.13",
-        "vue-router": "^3.6.5"
+        "vue-router": "^3.6.5"{%- if cookiecutter.use_vuex == 'yes' %},
+        "vuex": "^3.6.2"{%- endif %}
     {% else %}
         "vue": "^3.2.41",
-        "vue-router": "^4.1.6"
+        "vue-router": "^4.1.6"{%- if cookiecutter.use_vuex == 'yes' %},
+        "vuex": "^4.1.0"{%- endif %}{% endif %}
     {% endif %}
     },
     "devDependencies": {
