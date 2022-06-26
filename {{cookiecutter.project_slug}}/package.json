@@ -34,6 +34,11 @@
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.42.0",
         "@typescript-eslint/parser": "^5.42.0",
+    {% if cookiecutter.vue_version == '2' %}
+        "@vitejs/plugin-vue2": "^2.0.0"
+    {% else %}
+        "@vitejs/plugin-vue": "^3.2.0"
+    {% endif %}
         "eslint": "^8.27.0",
         "husky": "^8.0.1",
         "markdownlint-cli": "^0.32.2",
@@ -41,6 +46,7 @@
         "stylelint-stylus": "^0.17.1",
         "stylus": "^0.59.0",
         "stylus-loader": "^7.1.0",
-        "typescript": "^4.8.4"
-    }
+        "typescript": "^4.8.4",
+        "vite": "^3.2.2"
+}
 }
