@@ -4,6 +4,8 @@
     "description": "{{ cookiecutter.project_description }}",
     "private": true,
     "scripts": {
+        "build": "vite build",
+        "dev": "vite",
         "lint": "npm run lint:eslint && npm run lint:markdownlint && npm run lint:stylelint",
         "lint:eslint": "eslint . --ext .ts",
         "lint:markdownlint": "markdownlint *.md",
