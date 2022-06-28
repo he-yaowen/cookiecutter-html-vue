@@ -30,7 +30,7 @@
     {% else %}
         "vue": "^3.2.41",
         "vue-router": "^4.1.6"{%- if cookiecutter.use_vuex == 'yes' %},
-        "vuex": "^4.1.0"{%- endif %}{% endif %}
+        "vuex": "^4.1.0"{%- endif %}
     {% endif %}
     },
     "devDependencies": {
